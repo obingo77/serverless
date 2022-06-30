@@ -1,0 +1,11 @@
+AWS Step Functions is an orchestration service that allows you to use AWS Lambda functions and other AWS services to build and automate business-critical workflows. It allows you to describe your processes as a series of event-driven steps, each of which is powered by AWS Lambda or other supported AWS services and responsible for its own part of the process. Every workflow is described in JSON-like syntax
+
+#########################################################################################################
+
+As an example, let’s create a workflow that consists of two Lambda functions and uses the Choice state.
+
+Demo State Machine
+ProcessTransaction – is the Choice state that uses theTransactionType input value to choose the next step (process purchase or process refund)
+ProcessPurchase – is the Task implemented by the Lambda function
+ProcessRefund – is the Task implemented by the Lambda function
+###########################################################################################################
